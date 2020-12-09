@@ -1,15 +1,15 @@
 class StrangerStrings {
 
     getHelloWorld(){
-        return null;
+        return "Hello World";
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment + secondSegment;
     }
 
     getPrefix(input){
-        return null;
+        return input.substring;
     }
 
     getSuffix(input){
