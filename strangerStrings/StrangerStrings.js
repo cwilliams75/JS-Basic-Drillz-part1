@@ -5,11 +5,13 @@ class StrangerStrings {
     }
 
     concatenation(firstSegment, secondSegment){
+           
         return firstSegment + secondSegment;
     }
 
     getPrefix(input){
-        return input.substring;
+      
+        return input.substring(0,3);
     }
 
     getSuffix(input){
