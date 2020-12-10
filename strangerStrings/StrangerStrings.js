@@ -32,23 +32,23 @@ class StrangerStrings {
 
         return input.substring(position, position + length)
 
-            }  
+        }  
 
     getFirstWord(input){
-
         return input.substring(0, input.indexOf(' '));
-        
-        } 
+            } 
 
-         
-    
     getSecondWord(spaceDelimnatedInput){
         return null;
     }
     
     reverse(input){
-        return null;
-    }
+    function reverseString() {
+    return str.split("").reverse().join("");
+}
+   return reverseString("WutangClan");
+
+     }
 }
 
 module.exports = StrangerStrings;
