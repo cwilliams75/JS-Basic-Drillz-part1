@@ -15,7 +15,7 @@ class StrangerStrings {
     }
 
     getSuffix(input){
-        return null;
+        return input.substring(input.length -3);
     }
 
     getMiddleCharacter(input){
