@@ -1,54 +1,48 @@
 class StrangerStrings {
 
-    getHelloWorld(){
+    getHelloWorld() {
         return "Hello World";
     }
 
-    concatenation(firstSegment, secondSegment){
-           
+    concatenation(firstSegment, secondSegment) {
         return firstSegment + secondSegment;
     }
 
-    getPrefix(input){
-      
-        return input.substring(0,3);
+    getPrefix(input) {
+        let prefix = input.substring(0, 3);
+        return prefix;
     }
 
-    getSuffix(input){
-        return input.substring(input.length -3);
+    getSuffix(input) {
+        let suffix = input.substring(input.length - 3);
+        return suffix;
     }
 
-    getMiddleCharacter(input){
-        let position;
-        let length;
+    getMiddleCharacter(input) {
+        let middle = Math.floor(input.length / 2);
+        console.log(middle);
+        return input[middle];
+    }
 
-        if(input.length % 2 == 1) {
-            position = input.length / 2;
-            length = 1;
-        } else {
-            position = input.length / 2 - 1;
-            length = 2;
+    getFirstWord(input) {
+        let firstWord = input.substring(0, input.indexOf(' '));
+        console.log(firstWord);
+        return firstWord;
+    }
+
+    getSecondWord(spaceDelimnatedInput) {
+        let second = spaceDelimnatedInput.split(" ");
+        return second[1];
+
+    }
+
+    reverse(input) {
+        let reverse = ''
+        for (let i = input.length - 1; i >= 0; i--) {
+            reverse += input[i]
         }
-
-        return input.substring(position, position + length)
-
-        }  
-
-    getFirstWord(input){
-        return input.substring(0, input.indexOf(' '));
-            } 
-
-    getSecondWord(spaceDelimnatedInput){
-        return null;
+        return reverse
     }
-    
-    reverse(input){
-    function reverseString() {
-    return str.split("").reverse().join("");
-}
-   return reverseString("WutangClan");
-
-     }
 }
 
 module.exports = StrangerStrings;
