@@ -19,12 +19,28 @@ class StrangerStrings {
     }
 
     getMiddleCharacter(input){
-        return null;
-    }
+        let position;
+        let length;
+
+        if(input.length % 2 == 1) {
+            position = input.length / 2;
+            length = 1;
+        } else {
+            position = input.length / 2 - 1;
+            length = 2;
+        }
+
+        return input.substring(position, position + length)
+
+            }  
 
     getFirstWord(input){
-        return null;
-    }
+
+        return input.substring(0, input.indexOf(' '));
+        
+        } 
+
+         
     
     getSecondWord(spaceDelimnatedInput){
         return null;
